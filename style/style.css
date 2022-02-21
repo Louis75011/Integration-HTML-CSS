@@ -45,7 +45,10 @@ header {
 header {
     font-family: 'ancient-medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 3px;
-    margin: auto auto;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 header h1 {
@@ -59,15 +62,15 @@ header h1 {
 header nav {
     width: 80%;
     display: flex;
-    
+
 }
 
 header nav li {
     font-size: 30px;
     font-style: italic;
-    background-color: lightgray;
+    background-color: rgba(149, 149, 149, 0.2);
     border-radius: 1rem;
-    padding: 0.4rem;
+    padding: 0.7rem;
     cursor: pointer;
 }
 
@@ -75,13 +78,12 @@ header nav li {
 nav ul .li-style {
     list-style-type: square;
 }
+
 nav ul .li-style2 {
     list-style-type: circle;
 }
+
 nav ul .li-style3 {
-    list-style-type: upper-roman;
-}
-nav ul .li-style4 {
     list-style-type: upper-roman;
 }
 
@@ -163,7 +165,8 @@ footer {
 }
 
 /* Forms */
-form legend, form input {
+form legend,
+form input {
     margin: 0.5rem;
 }
 
