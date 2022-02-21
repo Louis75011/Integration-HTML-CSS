@@ -1,0 +1,65 @@
+/*
+    Notes de cours :
+
+    Hyper Text Markup Language.
+
+    Le HTML est le langage structurant de balisage batissant le squelette de notre page (textuel) tandis que le CSS s'occupe de la mise en forme (design, feuille de style), c'est en quelque sorte la chaire de notre corps.
+
+    Compatibilité navigateurs :
+    Même si les navigateurs s'améliorent chaque jour, il est bon de tester son webdesign au moins sur les 3 applications de navigations essentielles avec Chrome, Firefox et Internet Explorer.
+    Un navigateur inteprete le code et ne fait pas confiance au développeur, ainsi des propriétés (comme des margin) peuvent être ajoutées.
+
+    Fichiers :
+    En plus de notre fichier .html on aura généralement un dossier d'images, de styles et de scripts (JavaScript).
+
+    Balises :
+    Le tableau des caractères spéciaux peut être intégré via un code ISO ou HTML disponible en ligne.
+
+    La balise autofermante <br /> permet de faire un saut de ligne. Idem pour le séparateur à ligne horizontale <hr />.
+
+    Le paragraphe est un bloc qui retourne le texte automatiquement à la ligne, contrairement à la balise span qui est en une ligne. La balise strong prévient les moteurs de recherches de l'importance des mots qui se trouvent entre.
+    
+    Les titres ont 6 propriétés hiérarchiques entre le h1 et le h6 (+ grand au + petit). La balise de citation est <blockquote>.
+
+    Les listes à puces se font en branches li contenu dans la balise ul (ou ol pour un design différent). Il est possible d'ajouter une liste dans une autre.
+
+    Les liens pointent avec <a href="page2.html" target="_blank">Cliquez je vous prie</a> (le target permet l'ouverture dans un nouvel onglet).
+    Une ancre se déclare en # dans le href puis en id dans la balise de destination.
+
+    IMAGE : JPEG (compression pour image web), PNG (gère transparence et parfait pour logo), GIF (image animée).
+    
+    Pour organiser proprement son code en distinguant les parties de son site désormais il nous faut un header, main et footer pour séparer du haut au pied de page, et d'autres balises concernant les articles, les sections, les asides la barre de navigation, etc.
+
+    La balise figure permet de regrouper les illustrations (assets : vidéo, image, texte) et le figcaption permet d'ajouter une légende groupée.
+
+    Le div est un point central, il permet de faire des conténaires afin de regrouper plusieurs parties de notre site. On y place ses classes pour agir dessus en CSS.
+
+    Le formulaire form permet de mettre des champs dans lequels les internautes nous envoie des donnnées (à récupérer en back-end). Il faut définir le action, type (email, password), input (champ de texte), textarea (champ texte), value (valeur de départ), name (nom du type), label (section), legend (titre ou sous-titre) optgroup et option (ensemble d'options).
+
+    Les tableaux se perdent, avant c'était la base du net, on le commence avec <table>, on le sépare avec thead ou tbody et chaque ensemble de ligne avec tr et chaque ligne nouvelle avec th ou td (table de données). Le caption permet de donner un titre de tableau. Aussi, il existe les rangées, les colonnes, les cellules, les en-têtes et les regroupements multiples.
+    C'est une structure de données composé en lignes et en colonnes insérées.
+
+    La Feuille de Style en cascade :
+
+    Indispensable au fichier HTML. A inclure en lien dans le head du fichier HTLM. Utilisez les normes respectueuses du W3C.
+
+    Ce langage agit en sélecteur (balise, ID, class appelés respectivement par son nom, un # et enfin un . - en plus de son nom).
+
+    Vous avez des unités de valeurs px (pixels), rem (plus grand) ou % (% par rapport à l'écran). 1 mm est égal à 3,78 px. 10 vh = 10% de la hauteur du viewport (équivalent largeur à 10 vw).
+
+    Les couleurs sont prédéfinies (mots clés anglais), mais le mieux est de trouver une couleur précise en hexadecimale ou encore avec RGB pour les couleurs primaires.
+
+    Propriétés du navigateur + CSS externe, interne et/ou en ligne.
+    La balise !important signifie qu'il est impossible de passer outre.
+
+    Les possibilités sont infinies. On peut écarter les lettres ou les mots d'un texte.
+
+    Le fond d'écran se change avec BACKGROUND, on peut le faire avec une image ou une couleur unie ou répétée (no-repeat). Le background-attachement: fixed; permet de ne pas faire bouger le fond quand on "scroll" avec la souris. Le background-size: cover; fait prendre toute la largeur.
+
+    Les blocs div peuvent avoir plusieurs fonctionnalités en étant static, relative ou absolute en définition dedans sa position (position: fixed;). La propriété float est périmée depuis la création de div.
+
+    Le z-index (1,2,3) permet de définir un ordre de priorité pour faire chevaucher ses blocs. La commande overflow s'utilise avec différentes valeurs pour définir quand et ou le bloc se place.
+    Le display sert à l'affichage de la page, en none on désactive tout, tandis que les flex-box ou les blocks ou inline-blocks font apparaître les éléments. Le flex-grow fait que l'élément peut s'agrandir au reste de la page. Le flex-shrink fait que l'élément ne peut pas se réduire. Le flex-basis: 200px; fait que l'élement fera 200px minimum et s'étendra au reste?
+
+    Dans les fichiers présents ici vous avez de nombreux exemples de propriétés supplémentaires.
+*/

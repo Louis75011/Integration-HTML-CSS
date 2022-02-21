@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intégration HTML/CSS - Cours pratique Udemy</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="images/x-icon" />
+</head>
+
+<body>
+    <hr>
+    <header>
+        <h1>Intégration HTML/CSS</h1>
+        <nav>
+            <ul>
+                <li class="li-style"><a href="page.html">Accueil</a></li>
+                <li class="li-style2">Ancre Footer</li>
+                <ol>
+                    <li class="li-style3">Sections</li>
+                    <li class="li-style4">Articles</li>
+                </ol>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <hr>
+
+    <main>
+        <div class="container">
+            <div class="container-first">
+                <section id="multimedias">
+                    <h2>Multi-médias :</h2>
+                    <!-- Multimédias -->
+                    <audio controls preload="auto" src="/assets/arcade.mp3">
+                        <!-- <source src="acade.ogg">
+                <source src="acade.aac">
+                <source src="acade.wav"> -->
+                        Votre navigateur n'est pas en mesure de lire cet audio.
+                    </audio>
+                    <br>
+                    <video width="400" height="222" controls="controls" preload="auto" autoplay="true"
+                        poster="image.jpg">
+                        <source src="video.mp4" type="video/mp4" />
+                        <!-- <source src="video.ogv" type="video/ogg" />
+                    <source src="video.webm" type="video/webm" /> -->
+                        Votre navigateur n'arrive pas à lire la vidéo HTML 5
+                    </video>
+                </section>
+
+                <section id="table">
+                    <h2>Tableau :</h2>
+                    <table>
+                        <caption>Nos premiers internautes</caption>
+
+                        <!-- Représente les titres du tableau de données -->
+                        <thead>
+                            <tr>
+                                <th colspan="2">Nom</th>
+                                <th>Age</th>
+                                <th>Pays</th>
+                                <th>Courriel</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Le t-footer va aller en bas du tableau -->
+                        <tfoot>
+                            <tr>
+                                <th colspan="6">T-footer</th>
+                            </tr>
+                        </tfoot>
+
+                        <!-- Les données du milieu se place dans le t-body -->
+                        <tbody>
+                            <tr>
+                                <td colspan="2">Céline</td>
+                                <td>33 ans</td>
+                                <td>France</td>
+                                <td>celine@yoyofrance.fr</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">Emy</td>
+                                <td>39 ans</td>
+                                <td>Espagne</td>
+                                <td>emy@googme.com</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">Giorgio</td>
+                                <td>28 ans</td>
+                                <td>Italie</td>
+                                <td>giorgio@yoyociao.it</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                </section>
+
+                <article>
+                    <h2>Symboles :</h2>
+                    <div>
+                        <h3>Codes ISO</h3>
+                        <p>&#38; &#169; &#35; &#64; &#134;</p>
+
+                        <h3>Codes HTML</h3>
+                        <p>&amp; &copy;</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="container-second">
+                <section id="image">
+                    <h2>Image :</h2>
+                    <figure>
+                        <img width="305px" height="305px" src="assets/browser.png" alt="logo site">
+                        <figcaption>My logo</figcaption>
+                    </figure>
+                    <br>
+                </section>
+
+                <aside id="forms">
+                    <h2>Formulaires :</h2>
+                    <form action="">
+                        <fieldset>
+                            <legend>Cochez les langages de programmation</legend>
+                            <input type="checkbox" name="HTML" />HTML<br>
+                            <input type="checkbox" name="CSS" />CSS<br>
+                            <input type="checkbox" name="JavaScript" />JavaScript <br>
+                        </fieldset>
+                        <br>
+
+                        <form action="">
+                            <legend>Cochez la technologie préférée associée</legend>
+                            <fieldset>
+                                <input type="radio" name="tech" />TailWind<br>
+                                <input type="radio" name="tech" />SASS<br>
+                                <input type="radio" name="tech" />Vue.js<br>
+                            </fieldset>
+                        </form>
+                    </form>
+                    <br>
+
+                    <form autocomplete="on" class="final-form">
+                        <p>Entrez votre adresse electronique :</p>
+                        <input type="email" value="test@mail.fr" name="email" required />
+                        <input type="submit" />
+                        <input type="reset" />
+                    </form>
+
+                    <br>
+                    <form action=""></form>
+                </aside>
+            </div>
+        </div>
+    </main>
+    
+    <hr>
+    <footer>
+        <div class="foot-container">
+            <h4>Pied-de-page :</h4>
+            <br>
+            <label for="file">Progression du chargement</label>
+            <progress id="file" max="100" value="70%"> 70 % </progress>
+            <br>
+            <p class="text-lorem">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quidem nulla aspernatur, iusto
+                expedita nobis dolore sit adipisci atque tempore animi illum delectus a quos fugit quasi? Illum suscipit
+                labore ullam eius sunt voluptatibus facilis harum sed. Eum earum nihil, iure laborum quia ullam
+                reprehenderit officiis placeat iste vero optio mollitia amet aut sequi atque voluptatibus ipsam commodi
+                modi qui alias nostrum consequuntur assumenda esse quam! Placeat quod ratione sunt?
+            </p>
+            <br>
+            <span id="en-bas">Ancre du bas</span>
+            <hr>
+        </div>
+    </footer>
+    <!-- Ceci est un com -->
+</body>
+
+</html>
