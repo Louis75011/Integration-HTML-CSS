@@ -2,4 +2,4 @@
 
 ## Projet revoyant les bases du balisage et de leurs mises en forme
 
-### EN COURS !!!
+### Minifier - W3C Validator

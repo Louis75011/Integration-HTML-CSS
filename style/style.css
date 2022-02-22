@@ -17,7 +17,7 @@
 body {
     margin: 2rem;
     background: #EFEFBB;
-    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+    /* background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB); */
     background: linear-gradient(to right, #D4D3DD, #EFEFBB);
     font-size: larger;
 }
@@ -62,7 +62,6 @@ header h1 {
 header nav {
     width: 80%;
     display: flex;
-
 }
 
 header nav li {
@@ -72,6 +71,8 @@ header nav li {
     border-radius: 1rem;
     padding: 0.7rem;
     cursor: pointer;
+    margin-left: 2rem;
+    flex-wrap: wrap;
 }
 
 /* Header Nav */
@@ -106,7 +107,7 @@ p {
 }
 
 h2 {
-    width: 45%;
+    width: 55%;
     color: darkblue;
     font-weight: 800;
     text-decoration: underline;
@@ -129,6 +130,10 @@ h3 {
     gap: 1rem;
 }
 
+.medias {
+    margin-left: 1rem;
+}
+
 /* Grid Responsive */
 @media (max-width: 1160px) {
     .container {
@@ -137,6 +142,11 @@ h3 {
 }
 
 /* Main Tables */
+img {
+    width: 305px;
+    height: 305px;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -193,6 +203,21 @@ form input {
 
 .text-lorem::first-letter {
     font-size: 32px;
-    font-size: bold;
+    font-weight: bold;
     font-style: italic;
+}
+
+.button {
+    width: fit-content;
+    color: rosybrown;
+    background-color: darkblue;
+    opacity: 0.9;
+    padding: 0.75rem;
+    font-size: 19px;
+    letter-spacing: 2px;
+    border-radius: 2rem;
+    box-shadow: 2px 1px 1px 2px gold;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }

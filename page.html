@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intégration HTML/CSS - Cours pratique Udemy</title>
-    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/style.minify.css" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="images/x-icon" />
 </head>
 
 <body>
+    <span id="ancre-top"></span>
     <hr>
     <header>
         <h1>Intégration HTML/CSS</h1>
@@ -18,11 +19,12 @@
             <ul>
                 <li class="li-style"><a href="page.html">Accueil</a></li>
                 <li class="li-style2"><a href="#ancre">Ancre Footer</a></li>
-                <ol>
-                    <li class="li-style3">Medias</li>
-                    <li class="li-style3">Sections</li>
-                    <li class="li-style3">Articles</li>
-                </ol>
+
+            </ul>
+            <ul>
+                <li class="li-style3">Medias</li>
+                <li class="li-style3">Sections</li>
+                <li class="li-style3">Articles</li>
             </ul>
         </nav>
         <hr>
@@ -32,21 +34,21 @@
     <main>
         <div class="container">
             <div class="container-first">
-                <section id="multimedias">
+                <section>
                     <h2>Multi-médias :</h2>
                     <!-- Multimédias -->
-                    <audio controls preload="auto" src="/assets/arcade.mp3">
-                        <!-- <source src="acade.aac"> -->
-                        Votre navigateur n'est pas en mesure de lire cet audio.
-                    </audio>
-                    <br>
-                    <video width="400" height="222" controls="controls" preload="auto" autoplay="true"
-                        poster="image.jpg">
-                        <source src="video.mp4" type="video/mp4" />
-                        <!-- <source src="video.ogv" type="video/ogg" />
-                    <source src="video.webm" type="video/webm" /> -->
-                        Votre navigateur n'arrive pas à lire cette vidéo
-                    </video>
+                    <div class="medias">
+                        <audio controls preload="auto" src="/assets/arcade.mp3" muted>
+                            <!-- <source src="acade.aac"> -->
+                            <p>Votre navigateur n'est pas en mesure de lire cet audio.</p>
+                        </audio>
+                        <br>
+                        <video width="400" height="222" controls="controls" preload="auto"
+                            poster="/assets/landscape.jpeg" muted>
+                            <source src="/assets/landscape.mp4" type="video/mp4" />
+                            <p>Votre navigateur n'arrive pas à lire cette vidéo</p>
+                        </video>
+                    </div>
                 </section>
 
                 <section id="table">
@@ -63,14 +65,6 @@
                                 <th>Courriel</th>
                             </tr>
                         </thead>
-
-                        <!-- Le t-footer va aller en bas du tableau -->
-                        <tfoot>
-                            <tr>
-                                <th colspan="6">T-footer</th>
-                            </tr>
-                        </tfoot>
-
                         <!-- Les données du milieu se place dans le t-body -->
                         <tbody>
                             <tr>
@@ -94,6 +88,14 @@
                                 <td>giorgio@yoyociao.it</td>
                             </tr>
                         </tbody>
+
+                        <!-- Le t-footer va aller en bas du tableau -->
+                        <tfoot>
+                            <tr>
+                                <th colspan="5">T-footer</th>
+                            </tr>
+                        </tfoot>
+
                     </table>
                     <br>
                 </section>
@@ -102,19 +104,19 @@
                     <h2>Symboles :</h2>
                     <div>
                         <h3>Codes ISO</h3>
-                        <p>&#38; &#169; &#35; &#64; &#134;</p>
+                        <p> &#38; &#169; &#35; &#64; </p>
 
                         <h3>Codes HTML</h3>
-                        <p>&amp; &copy;</p>
+                        <p> &amp; &copy; </p>
                     </div>
                 </article>
             </div>
 
-            <div class="container-second">
+            <div>
                 <section id="image">
                     <h2>Image :</h2>
                     <figure>
-                        <img width="305px" height="305px" src="assets/browser.png" alt="logo site">
+                        <img src="assets/browser.png" alt="logo site">
                         <figcaption>My logo</figcaption>
                     </figure>
                     <br>
@@ -122,24 +124,24 @@
 
                 <aside id="forms">
                     <h2>Formulaires :</h2>
-                    <form action="">
+                    <form>
                         <fieldset>
                             <legend>Cochez les langages de programmation</legend>
                             <input type="checkbox" name="HTML" />HTML<br>
                             <input type="checkbox" name="CSS" />CSS<br>
                             <input type="checkbox" name="JavaScript" />JavaScript <br>
                         </fieldset>
-                        <br>
-
-                        <form action="">
-                            <legend>Cochez la technologie préférée associée</legend>
-                            <fieldset>
-                                <input type="radio" name="tech" />TailWind<br>
-                                <input type="radio" name="tech" />SASS<br>
-                                <input type="radio" name="tech" />Vue.js<br>
-                            </fieldset>
-                        </form>
                     </form>
+                    <br>
+
+                    <fieldset>
+                        <legend>Cochez la technologie préférée associée</legend>
+                        <fieldset>
+                            <input type="radio" name="tech" />TailWind<br>
+                            <input type="radio" name="tech" />SASS<br>
+                            <input type="radio" name="tech" />Vue.js<br>
+                        </fieldset>
+                    </fieldset>
                     <br>
 
                     <form autocomplete="on" class="final-form">
@@ -149,7 +151,6 @@
                         <input type="reset" />
                     </form>
                     <br>
-                    <form action=""></form>
                 </aside>
             </div>
         </div>
@@ -167,10 +168,11 @@
                 modi qui alias nostrum consequuntur assumenda esse quam! Placeat quod ratione sunt?
             </p>
             <br>
-            <span id="ancre">Ancre du bas</span>
-            <hr>
+            <a class="button" href="#ancre-top">Ancre Header</a>
+            <span id="ancre"></span>
         </div>
     </footer>
+    <hr>
     <!-- Ceci est un com -->
 </body>
 
